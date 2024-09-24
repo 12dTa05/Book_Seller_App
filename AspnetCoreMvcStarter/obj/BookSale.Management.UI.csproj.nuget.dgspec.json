@@ -1,0 +1,451 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/BookSale.Management.UI.csproj": {}
+  },
+  "projects": {
+    "/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/BookSale.Management.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/BookSale.Management.UI.csproj",
+        "projectName": "BookSale.Management.UI",
+        "projectPath": "/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/BookSale.Management.UI.csproj",
+        "packagesPath": "/home/death/.nuget/packages/",
+        "outputPath": "/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/death/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj": {
+                "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SQLite": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.119, )"
+            },
+            "datatables.net-dt": {
+              "target": "Package",
+              "version": "[2.1.6, )"
+            },
+            "jQuery.Validation": {
+              "target": "Package",
+              "version": "[1.21.0, )"
+            },
+            "xunit.extensibility.core": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            },
+            "xunit.extensibility.execution": {
+              "target": "Package",
+              "version": "[2.9.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj",
+        "projectName": "BookSale.Management.Application",
+        "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj",
+        "packagesPath": "/home/death/.nuget/packages/",
+        "outputPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/death/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj": {
+                "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj"
+              },
+              "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {
+                "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj",
+        "projectName": "BookSale.Management.DataAccess",
+        "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj",
+        "packagesPath": "/home/death/.nuget/packages/",
+        "outputPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/death/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {
+                "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj",
+        "projectName": "BookSale.Management.Domain",
+        "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj",
+        "packagesPath": "/home/death/.nuget/packages/",
+        "outputPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/death/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Identity.Stores": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
+        "projectName": "BookSale.Management.Infrastructure",
+        "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
+        "packagesPath": "/home/death/.nuget/packages/",
+        "outputPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/death/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj": {
+                "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj"
+              },
+              "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj": {
+                "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.404/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
