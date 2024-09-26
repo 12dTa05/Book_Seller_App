@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7SxK0llKt7I=",
+  "dgSpecHash": "d+yAXO2PaaQ=",
   "success": true,
-  "projectFilePath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
+  "projectFilePath": "/home/death/Documents/Book_Seller_App/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
   "expectedPackageFiles": [
     "/home/death/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/death/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

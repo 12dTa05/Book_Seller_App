@@ -1,0 +1,349 @@
+@model BookSale.Management.Application.DTOs.AccountDTO
+
+@{
+    ViewData["Title"] = "Danh sách tài khoản";
+}
+
+<style>
+    .toast-container {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1050; /* Đảm bảo nó luôn nổi lên trên */
+    }
+</style>
+
+@section VendorStyles {
+    <link rel="stylesheet" href="~/vendor/libs/datatables-bs5/datatables.bootstrap5.css">
+    <link rel="stylesheet" href="~/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css">
+    <link rel="stylesheet" href="~/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css">
+    <link rel="stylesheet" href="~/vendor/libs/datatables-buttons-bs5/buttons.bootstrap5.css">
+    <link rel="stylesheet" href="~/vendor/libs/select2/select2.css" />
+    <link rel="stylesheet" href="~/vendor/libs/dropzone/dropzone.css" />
+    <link rel="stylesheet" href="~/vendor/libs/toastr/toastr.css" />
+    <link rel="stylesheet" href="~/vendor/libs/animate-css/animate.css">
+}
+
+@section VendorScripts {
+    <script src="~/vendor/libs/moment/moment.js"></script>
+    <script src="~/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+    <script src="~/vendor/libs/select2/select2.js"></script>
+    <script src="~/vendor/libs/cleavejs/cleave.js"></script>
+    <script src="~/vendor/libs/cleavejs/cleave-phone.js"></script>
+    <script src="~/vendor/libs/dropzone/dropzone.js"></script>
+    <script src="~/vendor/libs/toastr/toastr.js"></script>
+}
+
+@section PageScripts {
+    <script src="~/admin/components/account.js"></script>
+    <script src="~/js/forms-file-upload.js"></script>
+    <script src="~/js/ui-toasts.js"></script>
+}
+
+<!-- Content -->
+<div class="row g-4 mb-4">
+    <!-- Thống kê tài khoản -->
+    <div class="col-sm-6 col-xl-3">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <div class="me-1">
+                        <p class="text-heading mb-1">Tổng số</p>
+                        <div class="d-flex align-items-center">
+                            <h4 class="mb-1 me-2" id="total-users">0</h4>
+                            <p class="text-success mb-1" id="total-percent">(0%)</p>
+                        </div>
+                        <small class="mb-0">Tổng số tài khoản</small>
+                    </div>
+                    <div class="avatar">
+                        <div class="avatar-initial bg-label-primary rounded-3">
+                            <div class="ri-group-line ri-26px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Các thống kê khác... -->
+    <!-- ... -->
+</div>
+
+<!-- Users List Table -->
+<div class="card">
+    <div class="card-header border-bottom">
+        <h5 class="card-title mb-0">Bộ lọc</h5>
+        <div class="d-flex justify-content-between align-items-center row pt-2 gap-3">
+            <div class="col-md-3 user_status">
+                <select id="FilterStatus" class="form-select text-capitalize">
+                    <option value=""> Trạng thái </option>
+                    <option value="true">Hoạt động</option>
+                    <option value="false">Không hoạt động</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="card-datatable table-responsive">
+        <table class="datatables-users table" id="dt-user">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th>Tên đăng nhập</th>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Trạng thái</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <!-- Offcanvas Add User -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasAddUser" aria-labelledby="offcanvasAddUserLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 id="offcanvasAddUserLabel" class="offcanvas-title">Thêm tài khoản</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body mx-0 flex-grow-0 h-100">
+            <form asp-controller="Account" asp-action="SaveData" method="post" enctype="multipart/form-data" class="add-new-user pt-0" id="addNewUserForm">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+
+                <!-- Role Select -->
+                <div class="form-floating form-floating-outline mb-5">
+                    @Html.DropDownListFor(x => x.RoleName, (IEnumerable<SelectListItem>)ViewBag.Roles, "Chọn vai trò",
+                             new { @class = "select2 form-select form-select-lg", id = "user-role" })
+                    <label for="user-role">Vai trò <span class="text-danger">*</span></label>
+                </div>
+
+                <!-- Username & Password -->
+                <div class="form-floating form-floating-outline mb-5">
+                    @if (!string.IsNullOrEmpty(Model.Id))
+                    {
+                        <input type="text" class="form-control" asp-for="Username" placeholder="Username" readonly />
+                        <label for="Username">Tên đăng nhập</label>
+                    }
+                    else
+                    {
+                        <input type="text" class="form-control" asp-for="Username" placeholder="Username" />
+                        <label for="Username">Tên đăng nhập <span class="text-danger">*</span></label>
+                    }
+                </div>
+
+                @if (string.IsNullOrEmpty(Model.Id))
+                {
+                    <div class="form-floating form-floating-outline mb-5">
+                        <input type="password" class="form-control" asp-for="Password" placeholder="Password" />
+                        <label for="Password">Mật khẩu <span class="text-danger">*</span></label>
+                    </div>
+                }
+
+                <!-- Fullname -->
+                <div class="form-floating form-floating-outline mb-5">
+                    <input type="text" class="form-control" asp-for="Fullname" placeholder="John Doe" />
+                    <label for="Fullname">Họ và tên <span class="text-danger">*</span></label>
+                </div>
+
+                <!-- Email -->
+                <div class="form-floating form-floating-outline mb-5">
+                    <input type="email" class="form-control" asp-for="Email" placeholder="john.doe@example.com" />
+                    <label for="Email">Email <span class="text-danger">*</span></label>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-floating form-floating-outline mb-5">
+                    <input type="text" class="form-control phone-mask" asp-for="Phone" placeholder="658 799 8941" />
+                    <label for="Phone">Số điện thoại</label>
+                </div>
+
+                <!-- Address -->
+                <div class="form-floating form-floating-outline mb-5">
+                    <input type="text" class="form-control" asp-for="Address" placeholder="Address" />
+                    <label for="Address">Địa chỉ</label>
+                </div>
+
+                <!-- IsActive -->
+                <div class="form-check mb-5">
+                    <input class="form-check-input" type="checkbox" asp-for="IsActive" id="user-active" />
+                    <label class="form-check-label" for="user-active">
+                        Kích hoạt tài khoản
+                    </label>
+                </div>
+
+                <!-- Avatar Upload -->
+                <div class="mb-5">
+                    <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        @if (!string.IsNullOrEmpty(Model.Id))
+                        {
+                            <img src="~/img/user/@(Model.Id).png" class="d-block rounded" height="100" width="100" id="img-avatar" />
+                        }
+                        else
+                        {
+                            <img src="~/img/no-image.png" class="d-block rounded" height="100" width="100" id="img-avatar" />
+                        }
+                        <div class="button-wrapper">
+                            <label for="Avatar" class="btn btn-primary me-2 mb-3" tabindex="0">
+                                <span class="d-none d-sm-block">Tải ảnh lên</span>
+                                <i class="ri-upload-2-line d-block d-sm-none"></i>
+                                <input type="file" class="account-file-input" asp-for="Avatar" id="Avatar" hidden accept="image/png, image/jpeg" />
+                            </label>
+                            <div class="text-muted">Cho phép JPG hoặc PNG.</div>
+                            @Html.ValidationMessageFor(x => x.Avatar, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary me-sm-3 me-1">Lưu</button>
+                    <button type="button" class="btn btn-label-secondary" data-bs-dismiss="offcanvas">Hủy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+
+@section Scripts {
+    <script>
+        (function () {
+            // Image preview
+            document.getElementById('Avatar').onchange = function () {
+                const input = document.getElementById('Avatar').files[0];
+                if (input) {
+                    const validFormats = ['image/jpeg', 'image/png'];
+                    if (!validFormats.includes(input.type)) {
+                        toastr.error('Chỉ chấp nhận định dạng JPG hoặc PNG.', 'Lỗi');
+                        // Reset the file input
+                        document.getElementById('Avatar').value = "";
+                        return;
+                    }
+
+                    const maxSize = 2 * 1024 * 1024; // 2MB
+                    if (input.size > maxSize) {
+                        toastr.error('Ảnh vượt quá kích thước 2MB.', 'Lỗi');
+                        // Reset the file input
+                        document.getElementById('Avatar').value = "";
+                        return;
+                    }
+
+                    document.getElementById('img-avatar').src = URL.createObjectURL(input);
+                }
+            };
+
+            document.getElementById('img-avatar').onerror = function () {
+                const img = document.getElementById('img-avatar');
+                img.src = "/img/no-image.png";
+                img.alt = "no image";
+            };
+
+            // Phone mask
+            const phoneMaskList = document.querySelectorAll('.phone-mask');
+            if (phoneMaskList) {
+                phoneMaskList.forEach(function (phoneMask) {
+                    new Cleave(phoneMask, {
+                        phone: true,
+                        phoneRegionCode: 'US'
+                    });
+                });
+            }
+
+            // Select2 initialization
+            $('.select2').select2({
+                dropdownParent: $('#offcanvasAddUser')
+            });
+
+            // Cấu hình Toastr
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "3000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            // Update statistics
+            function updateStats() {
+                $.ajax({
+                    url: '/admin/account/getstats',
+                    method: 'GET',
+                    success: function (response) {
+                        $('#total-users').text(response.total);
+                        $('#active-users').text(response.active);
+                        $('#inactive-users').text(response.inactive);
+
+                        const activePercent = response.total > 0 ? ((response.active / response.total) * 100).toFixed(1) : 0;
+                        const inactivePercent = response.total > 0 ? ((response.inactive / response.total) * 100).toFixed(1) : 0;
+
+                        $('#active-percent').text(`(${activePercent}%)`);
+                        $('#inactive-percent').text(`(${inactivePercent}%)`);
+                    }
+                });
+            }
+
+            updateStats();
+            setInterval(updateStats, 60000);
+
+        })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#addNewUserForm').on('submit', function (e) {
+                e.preventDefault(); // Ngăn hành vi mặc định của form
+
+                const formData = new FormData(this);
+
+                $.ajax({
+                    url: $(this).attr('action'), // URL lấy từ thuộc tính action của form
+                    type: $(this).attr('method'), // Method lấy từ thuộc tính method của form
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    success: function (response) {
+                        if (response.success) {
+                            // Sử dụng Toastr để hiển thị thông báo thành công
+                            toastr.success(response.message, 'Thành công');
+                            $('#dt-user').DataTable().ajax.reload(); // Tải lại bảng dữ liệu
+                            $('#offcanvasAddUser').offcanvas('hide'); // Ẩn offcanvas
+                            // Reset form
+                            $('#addNewUserForm')[0].reset();
+                            $('#img-avatar').attr('src', '/img/no-image.png');
+                            $('.select2').val(null).trigger('change');
+                        } else {
+                            toastr.success(response.message, 'Thành công');
+                            $('#dt-user').DataTable().ajax.reload(); // Tải lại bảng dữ liệu
+                            $('#offcanvasAddUser').offcanvas('hide'); // Ẩn offcanvas
+                            // Reset form
+                            $('#addNewUserForm')[0].reset();
+                            $('#img-avatar').attr('src', '/img/no-image.png');
+                            $('.select2').val(null).trigger('change');
+                        }
+                    },
+                    error: function () {
+                        // Sử dụng Toastr để hiển thị thông báo lỗi
+                        toastr.error('Đã xảy ra lỗi khi lưu tài khoản.', 'Lỗi');
+                    }
+                });
+            });
+        });
+                                                                      
+
+    </script>
+    
+}

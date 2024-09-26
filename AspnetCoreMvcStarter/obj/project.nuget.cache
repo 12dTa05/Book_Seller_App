@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5okrkIFfeBk=",
+  "dgSpecHash": "qMYc3smHMg0=",
   "success": true,
-  "projectFilePath": "/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/BookSale.Management.UI.csproj",
+  "projectFilePath": "/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/BookSale.Management.UI.csproj",
   "expectedPackageFiles": [
     "/home/death/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/home/death/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

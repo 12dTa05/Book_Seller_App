@@ -1,0 +1,179 @@
+@using System.Globalization
+@model IEnumerable<BookSale.Management.Application.DTOs.BookDTO>
+@using Microsoft.AspNetCore.Hosting;
+@inject IWebHostEnvironment WebHostEnvironment
+@using System.IO
+
+<section class="shop-section fix section-padding">
+    <div class="container">
+        <div class="shop-default-wrapper">
+            <div class="row">
+
+                <div class="col-xl-3 col-lg-4 order-2 order-md-1 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="main-sidebar">
+                        <div class="single-sidebar-widget">
+                            <div class="wid-title">
+                                <h5>Search</h5>
+                            </div>
+                            <form action="#" class="search-toggle-box">
+                                <div class="input-area search-container">
+                                    <input class="search-input" type="text" placeholder="Search here">
+                                    <button class="cmn-btn search-icon">
+                                        <i class="far fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="single-sidebar-widget">
+                            <div class="wid-title">
+                                <h5>Genres</h5>
+                            </div>
+                            <div class="categories-list">
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    @{
+                                        var genres = ViewBag.Genres as IEnumerable<BookSale.Management.Application.DTOs.GenreSiteDTO>;
+                                        var currentGenreId = Context.Request.Query["g"].ToString();
+                                    }
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link @(string.IsNullOrEmpty(currentGenreId) || currentGenreId == "0" ? "active" : "")"
+                                                id="pills-all-tab"
+                                                data-bs-toggle="pill"
+                                                data-bs-target="#pills-all"
+                                                type="button"
+                                                role="tab"
+                                                aria-controls="pills-all"
+                                                aria-selected="true"
+                                                onclick="window.location.href='/shop?g=0'">
+                                            All
+                                        </button>
+                                    </li>
+                                    @foreach (var genre in genres)
+                                    {
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link @(currentGenreId == genre.Id.ToString() ? "active" : "")"
+                                                    id="pills-@genre.Name-tab"
+                                                    data-bs-toggle="pill"
+                                                    data-bs-target="#pills-@genre.Name"
+                                                    type="button"
+                                                    role="tab"
+                                                    aria-controls="pills-@genre.Name"
+                                                    aria-selected="@(currentGenreId == genre.Id.ToString() ? "true" : "false")"
+                                                    onclick="window.location.href='/shop?g=@genre.Id'">
+                                                @genre.Name (@genre.TotalBooks)
+                                            </button>
+                                        </li>
+                                    }
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 order-1 order-md-2">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-arts" role="tabpanel"
+                             aria-labelledby="pills-arts-tab" tabindex="0">
+                            <div class="row">
+                                @{
+                                    var books = Model;
+
+                                    if (books.Count() > 0)
+                                    {
+                                        foreach (var book in books)
+                                        {
+                                            <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                                <div class="shop-box-items">
+                                                    <div class="book-thumb center">
+
+                                                        
+                                                        
+                                                            <a href="shop-details.html"><img src="~/img/books/@(book.Id).png" onerror="this.src='/img/no-image.png'" alt="img"></a>
+                                                        
+                                                        
+                                                        <ul class="post-box">
+                                                            <li>
+                                                                Hot
+                                                            </li>
+                                                            <li>
+                                                                -30%
+                                                            </li>
+                                                        </ul>
+                                                        <ul class="shop-icon d-grid justify-content-center align-items-center">
+                                                            <li>
+                                                                <a href="shop-cart.html"><i class="far fa-heart"></i></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shop-cart.html">
+                                                                    <img class="icon" src="assets/img/icon/shuffle.svg"
+                                                                         alt="svg-icon">
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="shop-details.html"><i class="far fa-eye"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="shop-content">
+                                                        <h3><a href="shop-details.html">@book.Title</a></h3>
+                                                        <ul class="price-list">
+                                                            <li>$@book.Cost.ToString("C", CultureInfo.GetCultureInfo("vi-VN"))</li>
+                                                        </ul>
+                                                        <div class="shop-button">
+                                                            <a href="#" class="theme-btn btn-add-cart" data-code="@book.Code">
+                                                                <i class="fa-solid fa-basket-shopping"></i> Add To Cart
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        }
+
+                                    }
+                                    else
+                                    {
+                                        <p> No data to display</p>
+                                    }
+                                }
+
+
+                            </div>
+                            <div class="row mt-5">
+                                <input type="hidden" id="current-genre" value="@ViewBag.CurrentGenre" />
+                                <input type="hidden" id="current-page-index" value="@ViewBag.CurrentPageIndex" />
+                                <input type="hidden" id="total-records" value="@ViewBag.TotalRecords" />
+
+                                <div class="col-md-6 offset-md-3 text-center">
+                                    <small id="txt-pagination">@(Model.Count()) items of @ViewBag.TotalRecords</small>
+                                    <div class="shop-progress">
+                                        <div class="progress" role="progressbar">
+                                            <div class="progress-bar bg-primary" style="width: @((Model.Count() * 100 / ViewBag.TotalRecords).ToString())%"></div>
+                                        </div>
+                                    </div>
+
+                                    @if (Model.Count() < ViewBag.TotalRecords)
+                                    {
+                                        <button class="theme-btn mt-4" id="btn-load-more">
+                                            <i class="fa-solid fa-spinner me-2"></i>
+                                            Load More
+                                        </button>
+                                    }
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script src="~/js/components/shop.js"></script>
+
+}

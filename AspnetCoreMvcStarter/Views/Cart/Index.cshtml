@@ -1,0 +1,116 @@
+@using System.Globalization
+@model IEnumerable<BookSale.Management.Application.DTOs.BookCartDTO>
+<!-- Shop Cart Section Start -->
+<div class="cart-section section-padding">
+    <div class="container">
+        <div class="main-cart-wrapper">
+            <div class="row g-5">
+                <div class="col-xl-9">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody-cart">
+                                @{
+                                    int index = 1;
+                                    double totalCart = 0;
+                                    if (Model is not null)
+                                    {
+                                        @foreach (var book in Model)
+                                        {
+                                            <tr>
+                                                <td>@(index++)</td>
+                                                <td>
+                                                    <img src="~/img/books/@(book.Id).png" alt="@book.Title"
+                                                        style="width: 52px; height: 68px; object-fit: cover; border-radius: 4px;">
+                                                </td>
+                                                <td>@book.Title</td>
+                                                <td>
+                                                    <span class="quantity-basket">
+                                                        <span class="qty">
+                                                            <button class="qtyminus" aria-hidden="true"
+                                                                data-code="@book.Code">−</button>
+                                                            <input type="number" name="qty" class="quantity-input" min="1" max="10"
+                                                                step="1" value="@book.Quantity" data-code="@book.Code">
+                                                            <button class="qtyplus" aria-hidden="true"
+                                                                data-code="@book.Code">+</button>
+                                                        </span>
+                                                    </span>
+                                                </td>
+                                                <td>
+                                                    <span class="cart-price">@book.Price.ToString("C",
+                                            CultureInfo.GetCultureInfo("vi-VN"))</span>
+                                                </td>
+                                                <td>
+                                                    <span class="subtotal-price">@((book.Price * book.Quantity).ToString("C",
+                                            CultureInfo.GetCultureInfo("vi-VN")))</span>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="remove-icon" data-code="@book.Code">
+                                                        <i class="fa-regular fa-trash-can"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            totalCart += book.Price * book.Quantity;
+                                        }
+                                    }
+                                    else
+                                    {
+                                            <tr>
+                                                <td colspan="7" class="text-center">
+                                                    No data found
+                                                </td>
+                                            </tr>
+                                    }
+                                }
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="cart-wrapper-footer">
+                        
+                        <button  id="btn-save-cart" class="theme-btn">
+                            Update Cart
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="table-responsive cart-total">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cart Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>
+                                        <span class="d-flex gap-5 align-items-center  justify-content-between">
+                                            <span class="sub-title">Total: </span>
+                                            <span class="sub-price sub-price-total">@totalCart.ToString("C", CultureInfo.GetCultureInfo("vi-VN"))</span>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="checkout.html" class="theme-btn">Proceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/components/cart.js"></script>
+}

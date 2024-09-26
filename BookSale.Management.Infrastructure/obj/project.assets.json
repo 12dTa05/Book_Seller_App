@@ -3319,11 +3319,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
+      "projectUniqueName": "/home/death/Documents/Book_Seller_App/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
       "projectName": "BookSale.Management.Infrastructure",
-      "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
+      "projectPath": "/home/death/Documents/Book_Seller_App/BookSale.Management.Infrastructure/BookSale.Management.Infrastructure.csproj",
       "packagesPath": "/home/death/.nuget/packages/",
-      "outputPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Infrastructure/obj/",
+      "outputPath": "/home/death/Documents/Book_Seller_App/BookSale.Management.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/death/.nuget/NuGet/NuGet.Config"
@@ -3338,11 +3338,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj": {
-              "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Application/BookSale.Management.Application.csproj"
+            "/home/death/Documents/Book_Seller_App/BookSale.Management.Application/BookSale.Management.Application.csproj": {
+              "projectPath": "/home/death/Documents/Book_Seller_App/BookSale.Management.Application/BookSale.Management.Application.csproj"
             },
-            "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj": {
-              "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj"
+            "/home/death/Documents/Book_Seller_App/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj": {
+              "projectPath": "/home/death/Documents/Book_Seller_App/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj"
             }
           }
         }

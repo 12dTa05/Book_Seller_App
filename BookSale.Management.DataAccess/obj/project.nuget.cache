@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bHzTJC4KZe0=",
+  "dgSpecHash": "UnLGriCtDg4=",
   "success": true,
-  "projectFilePath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj",
+  "projectFilePath": "/home/death/Documents/Book_Seller_App/BookSale.Management.DataAccess/BookSale.Management.DataAccess.csproj",
   "expectedPackageFiles": [
     "/home/death/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/death/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

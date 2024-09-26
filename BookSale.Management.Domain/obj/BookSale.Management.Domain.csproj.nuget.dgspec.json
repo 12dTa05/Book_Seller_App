@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {}
+    "/home/death/Documents/Book_Seller_App/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {}
   },
   "projects": {
-    "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {
+    "/home/death/Documents/Book_Seller_App/BookSale.Management.Domain/BookSale.Management.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj",
+        "projectUniqueName": "/home/death/Documents/Book_Seller_App/BookSale.Management.Domain/BookSale.Management.Domain.csproj",
         "projectName": "BookSale.Management.Domain",
-        "projectPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/BookSale.Management.Domain.csproj",
+        "projectPath": "/home/death/Documents/Book_Seller_App/BookSale.Management.Domain/BookSale.Management.Domain.csproj",
         "packagesPath": "/home/death/.nuget/packages/",
-        "outputPath": "/home/death/Downloads/BTL/Book_Seller/BookSale.Management.Domain/obj/",
+        "outputPath": "/home/death/Documents/Book_Seller_App/BookSale.Management.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/death/.nuget/NuGet/NuGet.Config"

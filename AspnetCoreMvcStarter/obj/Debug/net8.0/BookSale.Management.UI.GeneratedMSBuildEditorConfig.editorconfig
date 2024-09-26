@@ -17,251 +17,251 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BookSale.Management.UI
 build_property.RootNamespace = BookSale.Management.UI
-build_property.ProjectDir = /home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/
+build_property.ProjectDir = /home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = /home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter
+build_property.MSBuildProjectDirectory = /home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Account/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Account/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Account/SaveData.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Account/SaveData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQWNjb3VudC9TYXZlRGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Authentication/Login.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Authentication/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQXV0aGVudGljYXRpb24vTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Authentication/Register.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Authentication/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvQXV0aGVudGljYXRpb24vUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Home/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Home/Privacy.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Page2/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Page2/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvUGFnZTIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Error.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Footer/_Footer.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Footer/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL0Zvb3Rlci9fRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Menu/_HorizontalMenu.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Menu/_HorizontalMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL01lbnUvX0hvcml6b250YWxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Menu/_VerticalMenu.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Menu/_VerticalMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL01lbnUvX1ZlcnRpY2FsTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Navbar/_Navbar.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Navbar/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL05hdmJhci9fTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Navbar/_NavbarPartial.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/Navbar/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL05hdmJhci9fTmF2YmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_Scripts.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_ScriptsFront.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_ScriptsFront.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzRnJvbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_ScriptsIncludes.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_ScriptsIncludes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzSW5jbHVkZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_ScriptsIncludesFront.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_ScriptsIncludesFront.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzSW5jbHVkZXNGcm9udC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_Styles.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_Styles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19TdHlsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_StylesFront.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_StylesFront.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19TdHlsZXNGcm9udC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_Variables.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/Sections/_Variables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL1NlY3Rpb25zL19WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_BlankLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_BlankLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19CbGFua0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_CommonMasterLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_CommonMasterLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19Db21tb25NYXN0ZXJMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_ContentNavbarLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_ContentNavbarLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19Db250ZW50TmF2YmFyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_FrontLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_FrontLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19Gcm9udExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_HorizontalLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_HorizontalLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19Ib3Jpem9udGFsTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/_Partials/_Macros.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/_Partials/_Macros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1BhcnRpYWxzL19NYWNyb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/_ViewImports.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Areas/Admin/Views/_ViewStart.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Areas/Admin/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQWRtaW4vVmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Cart/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Home/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Home/Privacy.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Page2/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Page2/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGFnZTIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Error.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/Footer/_Footer.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/Footer/_Footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL0Zvb3Rlci9fRm9vdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/Menu/_HorizontalMenu.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/Menu/_HorizontalMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL01lbnUvX0hvcml6b250YWxNZW51LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/Menu/_VerticalMenu.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/Menu/_VerticalMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL01lbnUvX1ZlcnRpY2FsTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/Navbar/_Navbar.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/Navbar/_Navbar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL05hdmJhci9fTmF2YmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/Navbar/_NavbarPartial.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/Navbar/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL05hdmJhci9fTmF2YmFyUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_Scripts.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_Scripts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_ScriptsFront.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_ScriptsFront.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzRnJvbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_ScriptsIncludes.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_ScriptsIncludes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzSW5jbHVkZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_ScriptsIncludesFront.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_ScriptsIncludesFront.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19TY3JpcHRzSW5jbHVkZXNGcm9udC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_Styles.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_Styles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19TdHlsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_StylesFront.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_StylesFront.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19TdHlsZXNGcm9udC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/Sections/_Variables.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/Sections/_Variables.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1NlY3Rpb25zL19WYXJpYWJsZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_BlankLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_BlankLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19CbGFua0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_CommonMasterLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_CommonMasterLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Db21tb25NYXN0ZXJMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_ContentNavbarLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_ContentNavbarLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Db250ZW50TmF2YmFyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_FrontLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_FrontLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Gcm9udExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_HorizontalLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_HorizontalLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Ib3Jpem9udGFsTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_LoginPartial.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_MyLayout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_MyLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19NeUxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shop/Home.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shop/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcC9Ib21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shop/Index.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shop/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hvcC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/_Partials/_Macros.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/_Partials/_Macros.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1BhcnRpYWxzL19NYWNyb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/_ViewImports.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/_ViewStart.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/death/Downloads/BTL/Book_Seller/AspnetCoreMvcStarter/Views/Shared/_Layout.cshtml]
+[/home/death/Documents/Book_Seller_App/AspnetCoreMvcStarter/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-kr1785j7yl
